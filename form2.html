@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FORM</title>
+    <meta charset="utf-8">
+    <meta name="wievport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/form.css" type="text/css">
+</head>
+<body>
+
+<form method="post" action="form.php" enctype="multipart/form-data">
+    <p class="manage"><b>Preview template</b>
+        <div class="dropdown">
+            <a href="#" data-toggle="dropdown" class="dropdown-toggle manage">manage</a>
+            <ul class="dropdown-menu manage_1">
+                <li><a href="#">grid</a></li>
+                <li><a href="#">th</a></li>
+                <li><a href="#">office</a></li>
+                <li><a href="#">uliana</a></li>
+                <li class="divider"></li>
+                <li><button>Add</button></li>
+            </ul>
+        </div>
+    </p>
+
+    <p><input type="radio" name="manage" value="m1" checked>grid<Br>
+    <input type="radio" name="manage" value="m2">th<Br>
+    <input type="radio" name="manage" value="m3">office<Br>
+    <input type="radio" name="manage" value="m3">uliana</p>
+
+    <p><b>ZIP</b>
+        <input type="file" name="brous_for_file">
+    </p>
+
+    <p class="manage"><b>Promo Files</b>
+        <div class="dropdown">
+            <a href="#" data-toggle="dropdown" class="dropdown-toggle manage">manage</a>
+            <ul class="dropdown-menu manage_2">
+                <li><a href="#">Promo App for Mac and Windows.pdf</a></li>
+                <li><a href="#">Promo Free Web App.pdf</a></li>
+                <li><a href="#">Good Boy License.pdf</a></li>
+                <li class="divider"></li>
+                <li><button>Add</button></li>
+            </ul>
+        </div>
+    </p>
+        <p><input type="checkbox" name="manage_promo_files" value="mpf1" checked>Promo App for Mac and Windows.pdf<Br>
+            <input type="checkbox" name="manage_promo_files" value="mpf2">Promo Free Web App.pdf<Br>
+            <input type="checkbox" name="manage_promo_files" value="mpf3">Good Boy License.pdf</p>
+
+<hr>
+
+    <p><b>Collection name</b></p>
+        <p><textarea name="collection_name" cols="40" rows="1">Collection name</textarea></p>
+
+    <p><b>Link to collection</b></p>
+        <p><textarea name="link_to_collection" cols="40" rows="1">Link to collection</textarea></p>
+
+    <p><b>Link to License</b></p>
+        <p><textarea name="link_to_license" cols="40" rows="1">Link to License</textarea></p>
+
+
+    <p><b>License text</b></p>
+        <p><textarea name="license_text" cols="40" rows="10">License text</textarea></p>
+
+<hr>
+
+    <p><b>ZIP comment</b></p>
+        <p>
+            <textarea name="zip_comment" cols="40" rows="10">
+Author: Icons8
+Link: https://icons8.com/
+License: https://icons8.com/good-boy-license/
+
+Please do whatever your mom would approve of.
+
+Permitted Use
+* Download
+* Change
+* Fork on GitHub
+    [ https://github.com/icons8/flat-color-icons ]
+    [ https://github.com/icons8/WPF-UI-Framework ]
+
+Prohibited Use
+* No tattoos
+* No touching with unwashed hands
+* No exchanging for drugs
+
+Have comments? You are very welcome [ https://icons8.com/c/flat-color-icons ]
+            </textarea>
+        </p>
+
+
+
+
+    <input type="submit" value="submit" name="submit">
+</form>
+</body>
+</html>

@@ -1,0 +1,4 @@
+DirectoryIndex form.html
+php_flag  display_errors 1
+php_flag  display_startup_errors 1
+php_value  error_reporting 2047

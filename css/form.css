@@ -1,0 +1,21 @@
+a.manage {
+    margin-left: 1em;
+}
+
+p.manage {
+    float: left;
+}
+ul.manage_1 {
+    margin-left: 14em;
+    margin-top: -1.2em;
+}
+ul.manage_2 {
+    margin-left: 12em;
+    margin-top: -1.2em;
+}
+
+ul.dropdown-menu li button {
+    margin-left: 1em;
+    padding: 0 2em;
+    border-radius: 3px;
+}
