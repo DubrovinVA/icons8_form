@@ -1,5 +1,5 @@
 <?php
-
+//1. нужно распаковать ZIP, загруженный пользователем (но не удалять ZIP)
 //глобальный массив с переданныи из формы архивом
 $archive_dir = $_FILES['brous_for_file']['tmp_name'];
 
@@ -19,11 +19,7 @@ if ($zip->open($fileName) !== true) {
 //извлекаем файлы
 $zip->extractTo($temp_dir);
 
-//закрываем архив
-$zip->close();
-
-//перебираем файлы в $temp_dir
-//функция получения списка файлов в $temp_dir и вложенных папках
+//2. найти SVG файлы среди всего, что распаковалось
 function scan_Dir($dir) {
     $arrfiles = array();
     if (is_dir($dir)) {
@@ -50,27 +46,13 @@ function scan_Dir($dir) {
 $files = scan_Dir($temp_dir);
 foreach ($files as $file) {
     $type = new SplFileInfo($file);
-    if (($type->getExtension()) !== "svg") {
-        unlink($file);
-    } else {
-        $name = basename($file).PHP_EOL;
-        $newfile = "D:/OpenServer/domains/icons8/archives/new_temp_dir/$name";
-        if (rename($file, $newfile)) {
-            echo "Файл $ile переименован в $newfile\n";
-        } else {
-            echo "Не удалось переименовать $file в $newfile\n";
-        };
+    if (($type->getExtension()) == "svg") {
+        ;
     };
-    //echo '<br>';
 };
-//$files1 = scan_Dir($temp_dir);
-//foreach ($files1 as $file) {
-//    $name = basename($file).PHP_EOL;
-//    $newfile = "D:/OpenServer/domains/icons8/archives/new_temp_dir/$name";
-//    echo $newfile.'<br>';
-//    if (copy($file, $newfile)) {
-//            echo "Файл $ile переименован в $newfile\n";
-//        } else {
-//            echo "Не удалось переименовать $file в $newfile\n";
-//        };
-//}
+//передать в preview.php данные про .svg
+
+//3. сгенерировать preview.html
+//4. засунуть preview.html в тот же самый архив
+//5. сохранить готовый ZIP в временной директории
+//6. дать пользователю ссылку на этот ZIP

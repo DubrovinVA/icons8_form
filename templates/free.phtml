@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>[[put title here]] by Icons8</title>
+<style type="text/css">
+*, :after, :before {
+	box-sizing: border-box;
+}
+body {
+	margin: 0 auto;
+	max-width: 880px;
+	min-width: 350px;
+	color: #68696A;
+	background-color: #ffffff;
+	background-size: 100%;
+	background-position: 100% 100%;
+}
+h1, h2, h3 {
+	font-family: Sanchez,serif;
+	font-weight: 400;
+	font-style: normal;
+	margin: 3rem 1rem 0;
+	color: #EF6C00;
+}
+a {
+	font-family: Sanchez,serif;
+	font-weight: 400;
+	font-style: normal;
+	color: #EF6C00;
+}
+a:hover {
+	color: #000;
+}
+.icons-set_element {
+	display: inline-block;
+	-webkit-transition: 75ms linear all;
+	transition: 75ms linear all;
+}
+.icons-set__icon {
+	margin: 0 .6rem .6rem 0;
+	color: #9b9b9b;
+	width: 6rem;
+	height: 6rem;
+	position: relative;
+	overflow: hidden;
+	display: inline-block;
+	text-decoration: none;
+	cursor: pointer;
+	text-align: center;
+	padding: 0 0 .3rem;
+	border: 2px solid transparent;
+	border-radius: 6px;
+	-webkit-transition: 75ms linear all;
+	transition: 75ms linear all;
+}
+.icons-set__icon:hover {
+	background: #f4f4f4;
+}
+.icons-set__icon-svg {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	min-height: 3rem;
+	margin: .5rem 0 0;
+}
+.icons-set__icon-data {
+	position: relative;
+	height: 2rem;
+}
+.icons-set__icon-title {
+	visibility: visible;
+	opacity: 1;
+	max-height: 28px;
+	line-height: 14px;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+	font-size: 12px;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	-webkit-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+img {
+	color: #fff;
+}
+.container {
+	position: relative;
+	z-index: 1;
+}
+</style>
+</head>
+<body>
+
+<?php
+$icons = [];
+/** @var \SplFileInfo $file */
+foreach($files as $file)
+{
+    $path = rawurldecode($file);
+    $title = preg_replace('/()\.svg$/u', '$1', $file->getBasename());
+    $iconName = preg_replace('/(.+)_\d/', '$1', $title);
+
+    if (!isset($icons[$iconName]))
+    $icons[]
+
+    echo <<<HTML
+        <div class="icons-set_element">
+                <div class="icons-set__icon">
+                    <div class="icons-set__icon-svg">
+                        <img class="icon" src="{$path}" title="{$title}"/>
+                    </div>
+                    <div class="icons-set__icon-data">
+                        <div class="icons-set__icon-title">{$title}</div>
+                    </div>
+                </div>
+            </div>
+HTML;
+    } ?>
+
+<div class="container">
+	<h2>[[put title here]] by <a href="http://icons8.com/">Icons8</a></h2>
+
+    <div class="c-page-single-category m-bundle m-underline m-padding-bottom m-max-width">
+
+        <div class="b-icons-block">
+            <div class="b-icons-block-wrap">
+                <div class="b-icon-wrapper m-tooltip">
+                    <span class="b-t-container m-ios7">iOS 9</span>
+                    <a href="/web-app/11679/support" title="Support Icon for iOS 9" class="b-icon"><!-- img --></a>
+                </div>
+                <div class="b-icon-wrapper m-tooltip">
+                    <span class="b-t-container m-ios7">iOS 9</span>
+                    <a href="/web-app/11683/support-filled" title="Support Filled Icon for iOS 9" class="b-icon">
+                        <!-- img --></a></div>
+                <div class="b-icon-wrapper m-tooltip">
+                    <span class="b-t-container m-win10">Windows 10</span><a href="/web-app/14311/support"
+                                                                            title="Support Icon for Windows 10"
+                                                                            class="b-icon">
+                        <!-- img -->                </a></div>
+                <div class="b-icon-wrapper m-tooltip"><span class="b-t-container m-win8">Windows 8</span><a
+                        href="/web-app/527/support" title="Support Icon for Windows 8" class="b-icon">
+                        <!-- img -->                </a></div>
+                <div class="b-icon-wrapper m-tooltip"><span class="b-t-container m-androidL">Android 5 Lollipop</span><a
+                        href="/web-app/6205/support" title="Support Icon for Android 5 Lollipop" class="b-icon">
+                        <!-- img -->                </a></div>
+                <div class="b-icon-wrapper m-tooltip"><span class="b-t-container m-android">Android 4</span><a
+                        href="/web-app/15440/support" title="Support Icon for Android 4" class="b-icon">
+                        <!-- img -->                </a></div>
+                <div class="b-icon-wrapper m-tooltip"><span class="b-t-container m-color">Color</span><a
+                        href="/web-app/13121/support" title="Support Icon for Color" class="b-icon">
+
+                        <!-- img -->
+                    </a></div>
+                <span class="b-icon-name">Support</span></div>
+        </div>
+        <div class="b-icons-block">
+            <div class="b-icons-block-wrap">
+                <div class="b-icon-wrapper m-tooltip"><span class="b-t-container m-ios7">iOS 9</span><a
+                        href="/web-app/437/twitter" title="Twitter Icon for iOS 9" class="b-icon">
+                        <!-- img -->                </a></div>
+                <div class="b-icon-wrapper m-tooltip"><span class="b-t-container m-ios7">iOS 9</span><a
+                        href="/web-app/8824/twitter-filled" title="Twitter Filled Icon for iOS 9" class="b-icon">
+                        <!-- img -->                </a></div>
+                <div class="b-icon-wrapper m-tooltip"><span class="b-t-container m-win10">Windows 10</span><a
+                        href="/web-app/16269/twitter" title="Twitter Icon for Windows 10" class="b-icon">
+                        <!-- img -->                </a></div>
+                <div class="b-icon-wrapper m-tooltip"><span class="b-t-container m-win8">Windows 8</span><a
+                        href="/web-app/436/twitter" title="Twitter Icon for Windows 8" class="b-icon">
+                        <!-- img -->                </a></div>
+                <div class="b-icon-wrapper m-tooltip"><span class="b-t-container m-androidL">Android 5 Lollipop</span><a
+                        href="/web-app/5707/twitter" title="Twitter Icon for Android 5 Lollipop" class="b-icon">
+                        <!-- img -->                </a></div>
+                <div class="b-icon-wrapper m-tooltip"><span class="b-t-container m-android">Android 4</span><a
+                        href="/web-app/3861/twitter" title="Twitter Icon for Android 4" class="b-icon">
+                        <!-- img -->                </a></div>
+                <div class="b-icon-wrapper m-tooltip"><span class="b-t-container m-color">Color</span><a
+                        href="/web-app/13963/twitter" title="Twitter Icon for Color" class="b-icon">
+
+
+                        <!-- img -->
+                    </a></div>
+                <span class="b-icon-name">Twitter</span></div>
+        </div>
+        <div class="b-icons-block">
+            <div class="b-icons-block-wrap">
+                <div class="b-icon-wrapper m-tooltip"><span class="b-t-container m-ios7">iOS 9</span><a
+                        href="/web-app/34/clock" title="Clock Icon for iOS 9" class="b-icon">
+                        <!-- img -->                </a></div>
+                <div class="b-icon-wrapper m-tooltip"><span class="b-t-container m-ios7">iOS 9</span><a
+                        href="/web-app/10034/clock-filled" title="Clock Filled Icon for iOS 9" class="b-icon">
+                        <!-- img -->                </a></div>
+                <div class="b-icon-wrapper m-tooltip"><span class="b-t-container m-win10">Windows 10</span><a
+                        href="/web-app/16153/clock" title="Clock Icon for Windows 10" class="b-icon">
+                        <!-- img -->                </a></div>
+                <div class="b-icon-wrapper m-tooltip"><span class="b-t-container m-win8">Windows 8</span><a
+                        href="/web-app/33/clock" title="Clock Icon for Windows 8" class="b-icon">
+                        <!-- img -->                </a></div>
+                <div class="b-icon-wrapper m-tooltip"><span class="b-t-container m-androidL">Android 5 Lollipop</span><a
+                        href="/web-app/5569/clock" title="Clock Icon for Android 5 Lollipop" class="b-icon">
+                        <!-- img -->                </a></div>
+                <div class="b-icon-wrapper m-tooltip"><span class="b-t-container m-android">Android 4</span><a
+                        href="/web-app/3160/clock" title="Clock Icon for Android 4" class="b-icon">
+                        <!-- img -->                </a></div>
+                <div class="b-icon-wrapper m-tooltip"><span class="b-t-container m-color">Color</span><a
+                        href="/web-app/11866/clock" title="Clock Icon for Color" class="b-icon">
+
+                        <!-- img -->
+                    </a></div>
+                <span class="b-icon-name">Clock</span></div>
+        </div>
+        <div class="b-icons-block">
+            <div class="b-icons-block-wrap">
+                <div class="b-icon-wrapper m-tooltip"><span class="b-t-container m-ios7">iOS 9</span><a
+                        href="/web-app/15849/hourglass" title="Hourglass Icon for iOS 9" class="b-icon">
+                        <!-- img -->                </a></div>
+                <div class="b-icon-wrapper m-tooltip"><span class="b-t-container m-ios7">iOS 9</span><a
+                        href="/web-app/15929/hourglass-filled" title="Hourglass Filled Icon for iOS 9" class="b-icon">
+                        <!-- img -->                </a></div>
+                <div class="b-icon-wrapper m-tooltip"><span class="b-t-container m-win10">Windows 10</span><a
+                        href="/web-app/16700/hourglass" title="Hourglass Icon for Windows 10" class="b-icon">
+                        <!-- img -->                </a></div>
+                <div class="b-icon-wrapper m-tooltip"><span class="b-t-container m-win8">Windows 8</span><a
+                        href="/web-app/15848/hourglass" title="Hourglass Icon for Windows 8" class="b-icon">
+                        <!-- img -->                </a></div>
+                <div class="b-icon-wrapper m-tooltip"><span class="b-t-container m-androidL">Android 5 Lollipop</span><a
+                        href="/web-app/20123/hourglass" title="Hourglass Icon for Android 5 Lollipop" class="b-icon">
+                        <!-- img -->                </a></div>
+                <div class="b-icon-wrapper m-tooltip"><span class="b-t-container m-android">Android 4</span><a
+                        href="/web-app/15847/hourglass" title="Hourglass Icon for Android 4" class="b-icon">
+                        <!-- img -->                </a></div>
+                <div class="b-icon-wrapper m-tooltip"><span class="b-t-container m-color">Color</span><a
+                        href="/web-app/15850/hourglass" title="Hourglass Icon for Color" class="b-icon">
+
+
+                        <!-- img -->
+                    </a></div>
+                <span class="b-icon-name">Hourglass</span></div>
+        </div>
+        <div class="b-icons-block">
+            <div class="b-icons-block-wrap">
+                <div class="b-icon-wrapper m-tooltip"><span class="b-t-container m-ios7">iOS 9</span><a
+                        href="/web-app/11204/file-filled" title="File Filled Icon for iOS 9" class="b-icon">
+                        <!-- img -->                </a></div>
+                <div class="b-icon-wrapper m-tooltip"><span class="b-t-container m-ios7">iOS 9</span><a
+                        href="/web-app/11651/file" title="File Icon for iOS 9" class="b-icon">
+                        <!-- img -->                </a></div>
+                <div class="b-icon-wrapper m-tooltip"><span class="b-t-container m-win10">Windows 10</span><a
+                        href="/web-app/14086/file" title="File Icon for Windows 10" class="b-icon">
+                        <!-- img -->                </a></div>
+                <div class="b-icon-wrapper m-tooltip"><span class="b-t-container m-win8">Windows 8</span><a
+                        href="/web-app/55/file" title="File Icon for Windows 8" class="b-icon">
+                        <!-- img -->                </a></div>
+                <div class="b-icon-wrapper m-tooltip"><span class="b-t-container m-androidL">Android 5 Lollipop</span><a
+                        href="/web-app/5565/file" title="File Icon for Android 5 Lollipop" class="b-icon">
+                        <!-- img -->                </a></div>
+                <div class="b-icon-wrapper m-tooltip"><span class="b-t-container m-android">Android 4</span><a
+                        href="/web-app/3133/file" title="File Icon for Android 4" class="b-icon">
+                        <!-- img -->                </a></div>
+                <div class="b-icon-wrapper m-tooltip"><span class="b-t-container m-color">Color</span><a
+                        href="/web-app/12141/file" title="File Icon for Color" class="b-icon">
+
+                        <!-- img -->
+                    </a></div>
+                <span class="b-icon-name">File</span></div>
+        </div>
+        <div class="b-icons-block">
+            <div class="b-icons-block-wrap">
+                <div class="b-icon-wrapper m-tooltip"><span class="b-t-container m-ios7">iOS 9</span><a
+                        href="/web-app/2848/message-filled" title="Message Filled Icon for iOS 9" class="b-icon">
+                        <!-- img -->                </a></div>
+                <div class="b-icon-wrapper m-tooltip"><span class="b-t-container m-ios7">iOS 9</span><a
+                        href="/web-app/63/message" title="Message Icon for iOS 9" class="b-icon">
+                        <!-- img -->                </a></div>
+                <div class="b-icon-wrapper m-tooltip"><span class="b-t-container m-win10">Windows 10</span><a
+                        href="/web-app/16072/message" title="Message Icon for Windows 10" class="b-icon">
+                        <!-- img -->                </a></div>
+                <div class="b-icon-wrapper m-tooltip"><span class="b-t-container m-win8">Windows 8</span><a
+                        href="/web-app/62/message" title="Message Icon for Windows 8" class="b-icon">
+                        <!-- img -->                </a></div>
+                <div class="b-icon-wrapper m-tooltip"><span class="b-t-container m-androidL">Android 5 Lollipop</span><a
+                        href="/web-app/5764/message" title="Message Icon for Android 5 Lollipop" class="b-icon">
+                        <!-- img -->                </a></div>
+                <div class="b-icon-wrapper m-tooltip"><span class="b-t-container m-android">Android 4</span><a
+                        href="/web-app/3250/message" title="Message Icon for Android 4" class="b-icon">
+                        <!-- img -->                </a></div>
+                <div class="b-icon-wrapper m-tooltip"><span class="b-t-container m-color">Color</span><a
+                        href="/web-app/13754/message" title="Message Icon for Color" class="b-icon">
+
+
+                        <!-- img -->
+                    </a></div>
+                <span class="b-icon-name">Message</span></div>
+        </div>
+        <div class="b-icons-block">
+            <div class="b-icons-block-wrap">
+                <div class="b-icon-wrapper m-tooltip"><span class="b-t-container m-ios7">iOS 9</span><a
+                        href="/web-app/2797/home-filled" title="Home Filled Icon for iOS 9" class="b-icon">
+                        <!-- img -->                </a></div>
+                <div class="b-icon-wrapper m-tooltip"><span class="b-t-container m-ios7">iOS 9</span><a
+                        href="/web-app/73/home" title="Home Icon for iOS 9" class="b-icon">
+                        <!-- img -->                </a></div>
+                <div class="b-icon-wrapper m-tooltip"><span class="b-t-container m-win10">Windows 10</span><a
+                        href="/web-app/14096/home" title="Home Icon for Windows 10" class="b-icon">
+                        <!-- img -->                </a></div>
+                <div class="b-icon-wrapper m-tooltip"><span class="b-t-container m-win8">Windows 8</span><a
+                        href="/web-app/72/home" title="Home Icon for Windows 8" class="b-icon">
+                        <!-- img -->                </a></div>
+                <div class="b-icon-wrapper m-tooltip"><span class="b-t-container m-androidL">Android 5 Lollipop</span><a
+                        href="/web-app/5572/home" title="Home Icon for Android 5 Lollipop" class="b-icon">
+                        <!-- img -->                </a></div>
+                <div class="b-icon-wrapper m-tooltip"><span class="b-t-container m-android">Android 4</span><a
+                        href="/web-app/3200/home" title="Home Icon for Android 4" class="b-icon">
+                        <!-- img -->                </a></div>
+                <div class="b-icon-wrapper m-tooltip"><span class="b-t-container m-color">Color</span><a
+                        href="/web-app/12229/home" title="Home Icon for Color" class="b-icon">
+                        <!-- img -->
+                    </a></div>
+                <span class="b-icon-name">Home</span></div>
+        </div>
+        <div class="b-icons-block">
+            <div class="b-icons-block-wrap">
+                <div class="b-icon-wrapper m-tooltip"><span class="b-t-container m-ios7">iOS 9</span><a
+                        href="/web-app/75/idea" title="Idea Icon for iOS 9" class="b-icon">
+                        <!-- img -->                </a></div>
+                <div class="b-icon-wrapper m-tooltip"><span class="b-t-container m-ios7">iOS 9</span><a
+                        href="/web-app/2979/idea-filled" title="Idea Filled Icon for iOS 9" class="b-icon">
+                        <!-- img -->                </a></div>
+                <div class="b-icon-wrapper m-tooltip"><span class="b-t-container m-win10">Windows 10</span><a
+                        href="/web-app/14199/idea" title="Idea Icon for Windows 10" class="b-icon">
+                        <!-- img -->                </a></div>
+                <div class="b-icon-wrapper m-tooltip"><span class="b-t-container m-win8">Windows 8</span><a
+                        href="/web-app/74/idea" title="Idea Icon for Windows 8" class="b-icon">
+                        <!-- img -->                </a></div>
+                <div class="b-icon-wrapper m-tooltip"><span class="b-t-container m-androidL">Android 5 Lollipop</span><a
+                        href="/web-app/5982/idea" title="Idea Icon for Android 5 Lollipop" class="b-icon">
+                        <!-- img -->                </a></div>
+                <div class="b-icon-wrapper m-tooltip"><span class="b-t-container m-android">Android 4</span><a
+                        href="/web-app/3141/idea" title="Idea Icon for Android 4" class="b-icon">
+                        <!-- img -->                </a></div>
+                <div class="b-icon-wrapper m-tooltip"><span class="b-t-container m-color">Color</span><a
+                        href="/web-app/12244/idea" title="Idea Icon for Color" class="b-icon">
+                        <!-- img -->
+                    </a></div>
+                <span class="b-icon-name">Idea</span></div>
+        </div>
+
+
+        <div class="b-icons-block">
+            <div class="b-icons-block-wrap">
+                <div class="b-icon-wrapper m-tooltip"><span class="b-t-container m-ios7">iOS 9</span><a
+                        href="/web-app/77/info" title="Info Icon for iOS 9" class="b-icon">
+                        <!-- img -->                </a></div>
+                <div class="b-icon-wrapper m-tooltip"><span class="b-t-container m-ios7">iOS 9</span><a
+                        href="/web-app/2800/info-filled" title="Info Filled Icon for iOS 9" class="b-icon">
+                        <!-- img -->                </a></div>
+                <div class="b-icon-wrapper m-tooltip"><span class="b-t-container m-win10">Windows 10</span><a
+                        href="/web-app/14093/info" title="Info Icon for Windows 10" class="b-icon">
+                        <!-- img -->                </a></div>
+                <div class="b-icon-wrapper m-tooltip"><span class="b-t-container m-win8">Windows 8</span><a
+                        href="/web-app/76/info" title="Info Icon for Windows 8" class="b-icon">
+                        <!-- img -->                </a></div>
+                <div class="b-icon-wrapper m-tooltip"><span class="b-t-container m-androidL">Android 5 Lollipop</span><a
+                        href="/web-app/15425/info" title="Info Icon for Android 5 Lollipop" class="b-icon">
+                        <!-- img -->                </a></div>
+                <div class="b-icon-wrapper m-tooltip"><span class="b-t-container m-android">Android 4</span><a
+                        href="/web-app/3156/info" title="Info Icon for Android 4" class="b-icon">
+                        <!-- img -->                </a></div>
+                <div class="b-icon-wrapper m-tooltip"><span class="b-t-container m-color">Color</span><a
+                        href="/web-app/12253/info" title="Info Icon for Color" class="b-icon">
+
+                        <!-- img -->
+                    </a></div>
+                <span class="b-icon-name">Info</span></div>
+        </div>
+        <div class="b-icons-block">
+            <div class="b-icons-block-wrap">
+                <div class="b-icon-wrapper m-tooltip"><span class="b-t-container m-ios7">iOS 9</span><a
+                        href="/web-app/87/like" title="Like Icon for iOS 9" class="b-icon">
+                        <!-- img -->                </a></div>
+                <div class="b-icon-wrapper m-tooltip"><span class="b-t-container m-ios7">iOS 9</span><a
+                        href="/web-app/7697/like-filled" title="Like Filled Icon for iOS 9" class="b-icon">
+                        <!-- img -->                </a></div>
+                <div class="b-icon-wrapper m-tooltip"><span class="b-t-container m-win10">Windows 10</span><a
+                        href="/web-app/16076/like" title="Like Icon for Windows 10" class="b-icon">
+                        <!-- img -->                </a></div>
+                <div class="b-icon-wrapper m-tooltip"><span class="b-t-container m-win8">Windows 8</span><a
+                        href="/web-app/86/like" title="Like Icon for Windows 8" class="b-icon">
+                        <!-- img -->                </a></div>
+                <div class="b-icon-wrapper m-tooltip"><span class="b-t-container m-androidL">Android 5 Lollipop</span><a
+                        href="/web-app/5581/like" title="Like Icon for Android 5 Lollipop" class="b-icon">
+                        <!-- img -->                </a></div>
+                <div class="b-icon-wrapper m-tooltip"><span class="b-t-container m-android">Android 4</span><a
+                        href="/web-app/3294/like" title="Like Icon for Android 4" class="b-icon">
+                        <!-- img -->                </a></div>
+                <div class="b-icon-wrapper m-tooltip"><span class="b-t-container m-color">Color</span><a href="/
+                
+                
+                </div><div class=" b-icons-block">
+                    <div class="b-icons-block-wrap">
+                        <div class="b-icon-wrapper m-tooltip"><span class="b-t-container m-win10">Windows 10</span><a
+                                href="/web-app/19413/like-filled" title="Like Filled Icon for Windows 10"
+                                class="b-icon"><!-- img -->                </a></div>
+                        <div class="b-icon-wrapper m-tooltip"><span class="b-t-container m-win8">Windows 8</span><a
+                                href="/web-app/19410/like-filled" title="Like Filled Icon for Windows 8" class="b-icon">
+                                <!-- img -->                </a></div>
+                        <div class="b-icon-wrapper m-tooltip"><span
+                                class="b-t-container m-androidL">Android 5 Lollipop</span><a
+                                href="/web-app/19409/like-filled" title="Like Filled Icon for Android 5 Lollipop"
+                                class="b-icon"><!-- img -->                </a></div>
+                        <div class="b-icon-wrapper m-tooltip"><span class="b-t-container m-android">Android 4</span><a
+                                href="/web-app/19412/like-filled" title="Like Filled Icon for Android 4" class="b-icon">
+                                <!-- img -->                </a></div>
+                        <div class="b-icon-wrapper m-tooltip"><span class="b-t-container m-color">Color</span><a
+                                href="/web-app/19411/like-filled" title="Like Filled Icon for Color" class="b-icon">
+
+
+                            </a></div>
+                        <span class="b-icon-name">Like Filled</span></div>
+                </div>
+                <div class="b-icons-block">
+                    <div class="b-icons-block-wrap">
+                        <div class="b-icon-wrapper m-tooltip"><span class="b-t-container m-ios7">iOS 9</span><a
+                                href="/web-app/2951/speech-bubble-filled" title="Speech Bubble Filled Icon for iOS 9"
+                                class="b-icon"><!-- img -->                </a></div>
+                        <div class="b-icon-wrapper m-tooltip"><span class="b-t-container m-ios7">iOS 9</span><a
+                                href="/web-app/143/speech-bubble" title="Speech Bubble Icon for iOS 9" class="b-icon">
+                                <!-- img -->                </a></div>
+                        <div class="b-icon-wrapper m-tooltip"><span class="b-t-container m-win8">Windows 8</span><a
+                                href="/web-app/142/speech-bubble" title="Speech Bubble Icon for Windows 8"
+                                class="b-icon"><!-- img -->                </a></div>
+                        <div class="b-icon-wrapper m-tooltip"><span class="b-t-container m-android">Android 4</span><a
+                                href="/web-app/3194/speech-bubble" title="Speech Bubble Icon for Android 4"
+                                class="b-icon"><!-- img -->                </a></div>
+                        <div class="b-icon-wrapper m-tooltip"><span class="b-t-container m-color">Color</span><a
+                                href="/web-app/13751/speech-bubble" title="Speech Bubble Icon for Color" class="b-icon">
+
+
+                            </a></div>
+                        <span class="b-icon-name">Speech Bubble</span></div>
+                </div>
+                <div class="b-icons-block">
+                    <div class="b-icons-block-wrap">
+                        <div class="b-icon-wrapper m-tooltip"><span class="b-t-container m-ios7">iOS 9</span><a
+                                href="/web-app/7818/user-female-filled" title="User Female Filled Icon for iOS 9"
+                                class="b-icon"><!-- img -->                </a></div>
+                        <div class="b-icon-wrapper m-tooltip"><span class="b-t-container m-ios7">iOS 9</span><a
+                                href="/web-app/2906/user-female" title="User Female Icon for iOS 9" class="b-icon">
+                                <!-- img -->                </a></div>
+                        <div class="b-icon-wrapper m-tooltip"><span class="b-t-container m-win10">Windows 10</span><a
+                                href="/web-app/15253/user-female" title="User Female Icon for Windows 10"
+                                class="b-icon"><!-- img -->                </a></div>
+                        <div class="b-icon-wrapper m-tooltip"><span class="b-t-container m-win8">Windows 8</span><a
+                                href="/web-app/11796/user-female" title="User Female Icon for Windows 8" class="b-icon">
+                                <!-- img -->                </a></div>
+                        <div class="b-icon-wrapper m-tooltip"><span class="b-t-container m-color">Color</span><a
+                                href="/web-app/18907/user-female" title="User Female Icon for Color" class="b-icon">
+
+
+                                <!-- img -->
+                            </a></div>
+                        <span class="b-icon-name">User Female Filled</span></div>
+                </div>
+                <div class="b-icons-block">
+                    <div class="b-icons-block-wrap">
+                        <div class="b-icon-wrapper m-tooltip"><span class="b-t-container m-ios7">iOS 9</span><a
+                                href="/web-app/7822/user-male-filled" title="User Male Filled Icon for iOS 9"
+                                class="b-icon"><!-- img -->                </a></div>
+                        <div class="b-icon-wrapper m-tooltip"><span class="b-t-container m-ios7">iOS 9</span><a
+                                href="/web-app/2952/user-male" title="User Male Icon for iOS 9" class="b-icon">
+                                <!-- img -->                </a></div>
+                        <div class="b-icon-wrapper m-tooltip"><span class="b-t-container m-win10">Windows 10</span><a
+                                href="/web-app/15267/user-male" title="User Male Icon for Windows 10" class="b-icon">
+                                <!-- img -->                </a></div>
+                        <div class="b-icon-wrapper m-tooltip"><span class="b-t-container m-win8">Windows 8</span><a
+                                href="/web-app/11797/user-male" title="User Male Icon for Windows 8" class="b-icon">
+                                <!-- img -->                </a></div>
+                        <div class="b-icon-wrapper m-tooltip"><span class="b-t-container m-color">Color</span><a href="/</div></div></div>
+    
+	<p class="icons-set">
+
+	<?php
+		/** @var \SplFileInfo $file * /
+		foreach($files as $file)
+		{
+			$path = rawurldecode($file);
+			$title = preg_replace('/()\.svg$/u', '$1', $file->getBasename());
+
+			echo <<<HTML
+				<div class="icons-set_element">
+						<div class="icons-set__icon">
+							<div class="icons-set__icon-svg">
+								<img class="icon" src="{$path}" title="{$title}"/>
+							</div>
+							<div class="icons-set__icon-data">
+								<div class="icons-set__icon-title">{$title}</div>
+							</div>
+						</div>
+					</div>
+HTML;
+		} */ ?>
+	</p>
+
+	<p>
+		<a href="http://icons8.com/">icons8.com/</a>
+		<br/>
+		<br/>
+		<a href="https://twitter.com/icons_8">Twitter</a>
+		&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="https://www.facebook.com/Icons8?ref=hl">Facebook</a>
+		&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="https://plus.google.com/+Icons8">Google+</a>
+	</p>
+</div>
+
+<link href="http://fonts.googleapis.com/css?family=Sanchez" rel="stylesheet" type="text/css">
+</body>
+</html>
