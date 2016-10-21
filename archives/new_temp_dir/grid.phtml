@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>[[put title here]] by Icons8</title>
+<style type="text/css">
+body {
+	margin: 0 auto;
+	max-width: 880px;
+	min-width: 350px;
+	color: #68696A;
+	background-color: #ffffff;
+	background-size: 100%;
+	background-position: 100% 100%;
+}
+h1, h2, h3 {
+	font-family: Sanchez,serif;
+	font-weight: 400;
+	font-style: normal;
+	margin: 3rem 1rem 0;
+	color: #EF6C00;
+}
+a {
+	font-family: Sanchez,serif;
+	font-weight: 400;
+	font-style: normal;
+	color: #EF6C00;
+}
+a:hover {
+	color: #000;
+}
+.icon {
+	width: 48px;
+	height: 48px;
+	margin: 1rem;
+}
+img {
+	color: #fff;
+}
+.container {
+	position: relative;
+	z-index: 1;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+	<h2>[[put title here]] by <a href="http://icons8.com/">Icons8</a></h2>
+
+	<p>
+<?php
+/** @var \SplFileInfo $file */
+foreach($files as $file)
+{
+    $path = rawurldecode($file);
+    $title = preg_replace('/()\.svg$/u', '$1', $file->getBasename());
+	echo <<<HTML
+        <img class="icon" src="{$path}" title="{$title}" />\n
+HTML;
+
+} ?>
+	</p>
+
+	<p>
+		<a href="http://icons8.com/">icons8.com</a>
+		<br/>
+		<br/>
+		<a href="https://twitter.com/icons_8">Twitter</a>
+		&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="https://www.facebook.com/Icons8?ref=hl">Facebook</a>
+		&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="https://plus.google.com/+Icons8">Google+</a>
+	</p>
+</div>
+
+<link href="http://fonts.googleapis.com/css?family=Sanchez" rel="stylesheet" type="text/css">
+</body>
+</html>

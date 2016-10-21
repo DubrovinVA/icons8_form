@@ -1,5 +1,5 @@
 <?php
-
+// консольное управление*
 function argv_options($options = array())
 {
     $argc = isset($_SERVER['argc']) ? $_SERVER['argc'] : 0;
@@ -15,13 +15,14 @@ function argv_options($options = array())
     }
     return $options;
 }
-
+// *консольное управление
 /**
  * Преобразует указанно имя иконки в общее имя, по которому должны связаться
  * все иконки между платформами и с разными модицикациями внешнего вида
  * @param string $iconName
  * @return string
  */
+
 function iconName($iconName)
 {
     // удалить расширение файла

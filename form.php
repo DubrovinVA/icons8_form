@@ -1,4 +1,6 @@
 <?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 
 //глобальный массив с переданныи из формы архивом
 $archive_dir = $_FILES['brous_for_file']['tmp_name'];
@@ -19,8 +21,8 @@ if ($zip->open($fileName) !== true) {
 //извлекаем файлы
 $zip->extractTo($temp_dir);
 
-//закрываем архив
-$zip->close();
+////закрываем архив
+//$zip->close();
 
 //перебираем файлы в $temp_dir
 //функция получения списка файлов в $temp_dir и вложенных папках
@@ -53,10 +55,10 @@ foreach ($files as $file) {
     if (($type->getExtension()) !== "svg") {
         unlink($file);
     } else {
-        $name = basename($file).PHP_EOL;
+        $name = basename($file);
         $newfile = "D:/OpenServer/domains/icons8/archives/new_temp_dir/$name";
         if (rename($file, $newfile)) {
-            echo "Файл $ile переименован в $newfile\n";
+            echo "Файл $file переименован в $newfile\n";
         } else {
             echo "Не удалось переименовать $file в $newfile\n";
         };
@@ -73,4 +75,9 @@ foreach ($files as $file) {
 //        } else {
 //            echo "Не удалось переименовать $file в $newfile\n";
 //        };
-//}
+//} d:\OpenServer\modules\php\PHP-5.6-x64\php.exe
+
+$zip->addFromString("readMe.txt", "hello!");
+$zip->close();
+
+rename($_FILES['brous_for_file']['tmp_name'], "D:/OpenServer/domains/icons8/archives/new_temp_dir/zip_1.zip");
